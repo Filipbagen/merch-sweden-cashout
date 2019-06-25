@@ -1,0 +1,63 @@
+#logo {
+  height: 50px;
+  margin-top: 30px;
+}
+
+#cashout {
+  height: 30px;
+  transform: rotate(-9deg);
+  margin-top: -5px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+  margin-top: 50px;
+}
+
+.number_column, .text_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.num {
+  border: 2.5px solid #2E2E2E;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  line-height: 150%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+  margin-right: 20px;
+}
+
+.column {
+  max-width: 800px;
+  line-height: 200%;
+}
+
+.instructions {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  background-color: red;
+  padding: 70px;
+  text-align: center;
+  width: 200px;
+  border-radius: 5px;
+}
+
+form input {
+    
+}
+
+form p {
+  margin: 0;
+}
