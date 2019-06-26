@@ -1,12 +1,13 @@
 #logo {
+  display: flex;
+  /* justify-content: center; */
   height: 50px;
   margin-top: 30px;
 }
 
 #cashout {
-  height: 30px;
-  transform: rotate(-9deg);
-  margin-top: -5px;
+  height: 50px;
+  margin-top: -10px;
 }
 
 .top {
@@ -14,30 +15,24 @@
     flex-direction: column;
 }
 
-p {
-  margin-top: 50px;
-}
-
-.number_column, .text_column {
-  display: flex;
-  flex-direction: column;
-}
-
 .num {
-  border: 2.5px solid #2E2E2E;
+  border: 3px solid #2E2E2E;
   border-radius: 50%;
   height: 70px;
   width: 70px;
   line-height: 150%;
   text-align: center;
   font-size: 50px;
-  font-weight: 300;
-  margin-right: 20px;
+  font-weight: 400;
+  flex-shrink: 0;
+  margin-top: 0;
 }
 
 .column {
-  max-width: 800px;
-  line-height: 200%;
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  max-width: 600px;
 }
 
 .instructions {
@@ -46,12 +41,20 @@ p {
   flex-direction: column;
 }
 
+  .column p {
+    line-height: 37px;
+}
+
 form {
-  background-color: red;
+  background-color: white;
   padding: 70px;
   text-align: center;
-  width: 200px;
   border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.1);
+  width: 50%;
+  margin: 30px auto;
 }
 
 form input {
@@ -60,4 +63,49 @@ form input {
 
 form p {
   margin: 0;
+}
+
+.button p {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  margin-top: 0;
+}
+
+.celebrate {
+  text-align: center;
+  max-width: 60%;
+  line-height: 1.6;
+}
+
+@keyframes write {
+ 100% {
+  stroke-dashoffset: 0;
+ } 
+}
+
+#curve1 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke-width: 80;
+  animation: write 1.5s linear forwards;
+  animation-delay: .4s;
+}
+
+#curve2 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke-width: 80;
+  animation: write 1s linear forwards .8s;
+  animation-delay: 1.2s;
+}
+
+#curve3 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke-width: 80;
+  animation: write 1s linear forwards 1s;
+  animation-delay: 1.3s;
 }
